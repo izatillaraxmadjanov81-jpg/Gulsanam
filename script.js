@@ -97,12 +97,17 @@ setTimeout(() => {
 
     goldenVideo.style.display = "block";
 
+    goldenVideo.load();
+
+    setTimeout(()=>{
+        goldenVideo.play().catch(()=>{});
+    },300);
+
     closeVideo.style.display = "none";
 
     showGallery.style.display = "none";
 
 }, 700);
-
 }
 
 // ===== Video tugaganda =====
@@ -167,6 +172,7 @@ loveNext.onclick = () => {
     lovePage.classList.remove("show");
 
     loveVideo.style.display = "block";
+    loveVideo.load();
 
     closeLoveVideo.style.display = "none";
 
@@ -221,6 +227,7 @@ nextAfterLove.onclick = () => {
         memoryPage.classList.add("show");
 
         memoryVideo.style.display="block";
+        memoryVideo.load();
 
         closeMemoryVideo.style.display="none";
 
@@ -271,6 +278,7 @@ memoryContinue.onclick = () => {
         finalPage.classList.add("show");
 
         finalVideo.style.display="block";
+        finalVideo.load();
 
         closeFinalVideo.style.display="none";
 
