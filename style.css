@@ -1065,3 +1065,70 @@ button:hover{
         0 0 15px hotpink;
 
 }
+
+video{
+    width:100%;
+    max-width:100%;
+    height:auto;
+}
+
+@media (max-width:768px){
+
+    body{
+        overflow:auto;
+    }
+
+    h1{
+        font-size:32px;
+    }
+
+    p{
+        font-size:18px;
+    }
+
+    button{
+        padding:14px 28px;
+        font-size:18px;
+    }
+
+    .paper{
+        width:95%;
+        padding:25px;
+    }
+
+    .paper h2{
+        font-size:28px;
+    }
+
+    .paper p{
+        font-size:18px;
+        line-height:1.6;
+    }
+
+    #goldenVideo,
+    #loveVideo,
+    #memoryVideo,
+    #finalVideo{
+        width:95%;
+        max-height:70vh;
+        border-radius:15px;
+    }
+
+    .photoTitle,
+    .memoryTitle{
+        font-size:24px;
+    }
+
+    .photoGrid img{
+        width:140px;
+        height:190px;
+    }
+
+    #finalMessage h1{
+        font-size:26px;
+    }
+
+    #finalMessage h2{
+        font-size:20px;
+    }
+}
